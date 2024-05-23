@@ -6,14 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}Tienda de Libros{% endblock %}</title>
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="shortcut icon" href="{% static '../static/icons/book.png' %}" type="image/x-icon">
 </head>
 <body>
     <header>
+        <div class="logo">
+            <img src="{% static 'icons/shopping-cart.png' %}" alt="logo">
+            <h1>Bookstore</h1>
+        </div>
         <nav>
             <ul>
-                <li><a href="{% url 'index' %}"></a>Inicio</li>
+                <li><a href="{% url 'index' %}">Inicio</a></li>
                 <li><a href="{% url 'lista_libros' %}">Libros</a></li>
-                <li><a href="{% url 'admin:index' %}">Administracion</a></li>
+                <li><a href="{% url 'admin:index' %}" target="_blank">Administracion</a></li>
             </ul>
         </nav>
     </header>

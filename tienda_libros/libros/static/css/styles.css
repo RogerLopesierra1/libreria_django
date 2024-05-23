@@ -3,14 +3,28 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     background-color: #f4f4f4;
 }
 
 header {
-    background-color: #333;
+    background-color: #952525;
     color: white;
-    padding: 1rem 0;
-    text-align: center;
+    padding: 0.5rem;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 1rem;
+}
+
+.logo img {
+    height: 3rem;
 }
 
 nav ul {
@@ -21,11 +35,14 @@ nav ul {
 nav ul li {
     display: inline;
     margin-right: 1rem;
+
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 main {
@@ -33,7 +50,7 @@ main {
 }
 
 footer {
-    background-color: #333;
+    background-color: #952525;
     color: white;
     text-align: center;
     padding: 1rem 0;
