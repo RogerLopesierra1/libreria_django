@@ -8,9 +8,9 @@ body {
 }
 
 header {
-    background-color: #952525;
+    background-color: #D21242;
     color: white;
-    padding: 0.5rem;
+    padding: 0.8rem;
     align-items: center;
     display: flex;
     justify-content: space-between;
@@ -24,7 +24,7 @@ header {
 }
 
 .logo img {
-    height: 3rem;
+    height: 2.8rem;
 }
 
 nav ul {
@@ -50,7 +50,7 @@ main {
 }
 
 footer {
-    background-color: #952525;
+    background-color: #D21242;
     color: white;
     text-align: center;
     padding: 1rem 0;
