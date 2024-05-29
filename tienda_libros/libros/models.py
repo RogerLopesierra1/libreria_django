@@ -17,3 +17,16 @@ class Libro(models.Model):
 
     def __str__(self):
         return self.titulo
+    
+class Usuario(models.Model):
+    nombre = models.CharField(max_length=255)
+    email = models.EmailField()
+    password = models.CharField(max_length=255)
+    
+    class Meta:
+        db_table = 'usuario'
+        verbose_name = 'Usuario'
+        verbose_name_plural = 'Usuarios'
+
+    def __str__(self):
+        return self.email
